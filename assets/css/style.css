@@ -1,0 +1,14 @@
+.overlay {
+    margin-top: 5rem;
+    background-color:#EFEFEF;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    opacity: .5; /* in FireFox */ 
+    filter: alpha(opacity=50); /* in IE */
+}
+
+

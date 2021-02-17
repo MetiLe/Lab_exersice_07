@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    /* filter: blur(8px); */
+    background-color: black;
+    display: flex;
+    font-family: 'Reggae One', cursive, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    /*background-image: linear-gradient(to bottom right, rgba(223, 217, 217, 0.4), rgb(0, 0, 0, 0.0));*/
+}
+
+
+
+.clock{
+
+    margin: auto;
+    width: 25em;
+    height: 25em;
+    background:url("https://images.pexels.com/photos/5999426/pexels-photo-5999426.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    
+    /* background-color: rgba(83, 85, 87, 0.6); */
+    /* background-image: linear-gradient(to bottom right, rgba(227, 227, 235, 0.5), rgba(29, 28, 28, 0.6)); */
+    
+    border-radius: 50%;
+    border: 12px solid yellow;
+    color:yellow;
+    
+    box-shadow: 10px -15px 19px rgba(104, 102, 102, 0.8);
+    position: relative;
+}
+.clock::after{
+    content: "";
+    width: 2.1em;
+    height: 2.1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 20;
+    background-color: black;
+    
+    box-shadow: -3px -3px 9px rgba(255,255,255,.8);
+
+}
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+}
+.hand.sec{
+    background-color: red;
+    
+    box-shadow: -13px 0px 10px rgba(0,0,0,.7);
+    width: 0.3em;
+    height: 47%;
+}
+.hand.min{
+    background-color:black;
+    
+    box-shadow: -10px 0px 10px rgba(0,0,0,.6);
+    width: 0.6em;
+    height: 40%;
+}
+.hand.hour{
+    background-color:black;
+    
+    box-shadow: -10px 0px 10px rgba(0,0,0,.4);
+
+    width: 0.9em;
+    height: 35%;
+}
+.clock .number{
+    opacity: 1;
+    
+    font-size: 4em;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+.clock .number1{ transform: rotate(30deg);}
+.clock .number2{ transform: rotate(60deg);}
+.clock .number3{ transform: rotate(90deg);}
+.clock .number4{ transform: rotate(120deg);}
+.clock .number5{ transform: rotate(150deg);}
+.clock .number6{ transform: rotate(180deg);}
+.clock .number7{ transform: rotate(210deg);}
+.clock .number8{ transform: rotate(240deg);}
+.clock .number9{ transform: rotate(270deg);}
+.clock .number10{ transform: rotate(300deg);}
+.clock .number11{ transform: rotate(330deg);}
+.clock .number3{
+    rotate: 45deg;
+}
