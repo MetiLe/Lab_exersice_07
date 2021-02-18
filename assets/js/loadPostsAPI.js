@@ -1,37 +1,23 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // UI Vars 
 const postDiv3 = document.getElementById('thePosts');
 const searchBar = document.querySelector('.searchBar');
 const searchicon = document.querySelector('.search');
-const spinner = document.querySelector(".overlay")
 
 searchicon.addEventListener('click', search);
 searchBar.disabled = true;
 
+var spinner = document.createElement('div');
+spinner.className = "overlay"
+spinner.innerHTML = `<div class="ui segment">
+<div class="ui active inverted dimmer">
+  <div class="ui large text loader">Loading</div>
+</div>
+<p></p>
+<p></p>
+<p></p>
+</div>`
+
+document.body.appendChild(spinner);
 
 
 //Load Every thing ....
